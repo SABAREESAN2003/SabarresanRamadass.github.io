@@ -96,6 +96,8 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -103,8 +105,13 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
+        .card-body {
+            flex: 1;
+        }
+
         .project-tags {
             margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         .tag {
@@ -172,11 +179,13 @@
             line-height: 40px;
             margin-right: 10px;
             transition: all 0.3s;
+            text-decoration: none;
         }
 
         .social-links a:hover {
             transform: translateY(-3px);
             background-color: var(--secondary);
+            color: white;
         }
 
         footer {
@@ -203,6 +212,7 @@
             border-radius: 15px;
             font-size: 0.8rem;
             font-weight: bold;
+            z-index: 2;
         }
 
         @media (max-width: 768px) {
@@ -273,7 +283,7 @@
                 </div>
             </div>
             <div class="col-lg-4 text-center">
-                <!-- Placeholder image, replace with your actual professional photo -->
+                <!-- Using the corrected profile.jpg image path -->
                 <img src="src/profile.jpg" alt="Sabareesan Ramadass" class="profile-img rounded-circle">
             </div>
         </div>
@@ -306,8 +316,18 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="mt-4">
+                    <h5 class="mb-3">Connect with me:</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sabareesan-ramadass" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SABAREESAN2003" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/your_username" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                        <a href="https://leetcode.com/your_username" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-4 mt-lg-0">
                 <div class="card skill-card p-4">
                     <h4 class="mb-4">Technical Expertise</h4>
                     <div class="mb-3">
@@ -433,9 +453,35 @@
                             <span class="tag">Java</span>
                             <span class="tag">Vibe-Coder</span>
                         </div>
-                        <div class="mt-4">
+                        <div class="mt-auto pt-3">
                             <a href="https://play.google.com/store/apps/details?id=com.VibeCoder.FinanceManager&pcampaignid=web_share" target="_blank" class="btn btn-success btn-sm">
                                 <i class="fab fa-google-play me-2"></i>Play Store
+                            </a>
+                            <a href="https://github.com/SABAREESAN2003/finance-manager" target="_blank" class="btn btn-outline-dark btn-sm ms-1">
+                                <i class="fab fa-github me-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Mark Management -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="achievement-badge">Web Application</div>
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" class="card-img-top" alt="Student Mark Management">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Mark Management System</h5>
+                        <p class="card-text">Architected a Single Page Application (SPA) dashboard for staff to dynamically manage student subjects and calculate SGPA. Features dynamic DOM manipulation and browser-based state management.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Local Storage</span>
+                        </div>
+                        <div class="mt-auto pt-3">
+                            <!-- Update this URL to match your newly created repository link -->
+                            <a href="https://SABAREESAN2003.github.io/student-marks-demo/" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
                             </a>
                         </div>
                     </div>
@@ -472,6 +518,11 @@
                             <span class="tag">Java</span>
                             <span class="tag">GPS Services</span>
                         </div>
+                        <div class="mt-auto pt-3">
+                            <a href="https://github.com/SABAREESAN2003" target="_blank" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github me-2"></i>View Project
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -488,6 +539,11 @@
                             <span class="tag">Java</span>
                             <span class="tag">Game Logic</span>
                             <span class="tag">Vibe-Coder</span>
+                        </div>
+                        <div class="mt-auto pt-3">
+                            <a href="https://github.com/SABAREESAN2003" target="_blank" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github me-2"></i>View Source
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -564,8 +620,10 @@
                     </ul>
                     <hr>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sabareesan-ramadass" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SABAREESAN2003" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/your_username" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                        <a href="https://leetcode.com/your_username" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
                     </div>
                 </div>
             </div>
@@ -606,15 +664,17 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 <p class="mb-0">&copy; 2026 Sabareesan Ramadass. All rights reserved.</p>
-                <p class="mb-0">Hosted on <a href="https://pages.github.com" class="text-white">GitHub Pages</a></p>
+                <p class="mb-0 mt-1" style="font-size: 0.9em; opacity: 0.8;">Hosted on <a href="https://pages.github.com" class="text-white" target="_blank">GitHub Pages</a></p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                <div class="social-links d-inline-block">
+                    <a href="https://linkedin.com/in/sabareesan-ramadass" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/SABAREESAN2003" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/your_username" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                    <a href="https://leetcode.com/your_username" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
                 </div>
             </div>
         </div>
